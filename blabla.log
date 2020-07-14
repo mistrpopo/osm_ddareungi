@@ -1,0 +1,40 @@
+Hello,
+I noticed that the public bike infrastructure is outdated and incorrect.
+Some are wrongly named, some have incorrect info.
+
+I got official data from ***
+They report 1540 stations.
+I want to mass-edit the OSM data, if possible preview the data before upload.
+Potentially keep the description from some nodes that might be useful.
+
+I managed to download the OSM data using https://overpass-turbo.eu/#
+I got 131 stations.
+
+What I still need to do :
+
+- make a diff of all stations
+  - identify stations that were not added yet to OSM and add them
+  - identify conflicting stations and merge them
+    - conflicting names : keep the OSM name in description if informative, keep other languages descriptions
+  - identify stations from OSM that do not appear on the official data (hopefully none)
+
+- 
+
+bounding box : 37.7 / 126.6 => 37.4 / 127.2
+
+
+
+https://query2map.toolforge.org/featurelist.php?key=highway&value=&types=lines&BBOX=13.5333,50.95,13.9333,51.15
+https://query2map.toolforge.org/featurelist.php?key=highway&value=&BBOX=13.5333,50.95,13.9333,51.15
+OK
+0.4 * 0.2 = 0.08
+
+ALL OF SEOUL
+https://query2map.toolforge.org/featurelist.php?key=amenity&value=bicycle_rental&BBOX=37.4,126.6,37.7,127.2
+ERROR: transform: couldn't project point (37.4 126.6 0): latitude or longitude exceeded limits (-14)
+
+TAEREUNG TO MANG-U
+https://query2map.toolforge.org/featurelist.php?key=amenity&value=bicycle_rental&BBOX=37.61770,127.07577,37.59977,127.10058
+37.61770,127.07577,37.59977,127.10058
+0.01793 * 0.02481 = 0.0004448433
+ERROR: transform: couldn't project point (37.5998 127.076 0): latitude or longitude exceeded limits (-14)
