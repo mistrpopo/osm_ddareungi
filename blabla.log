@@ -1,14 +1,17 @@
-Hello,
-I noticed that the public bike infrastructure is outdated and incorrect.
-Some are wrongly named, some have incorrect info.
+Hello guys,
+I live in Seoul, Korea and I noticed that the public bike infrastructure near me was missing from OpenStreetMap.
+I managed to download the existing OSM data using https://overpass-turbo.eu/# and I got 131 stations.
 
-I got official data from ***
-They report 1540 stations.
+In parallel, I got official data from the official Korean website and they report 1540 stations. The data is complete, with name, latitude, longitude, bike capacity and everything. 
+I managed to load the whole data into a data-frame with Python and sanity-check it all and it all looks fine.
+
+After comparing the data, it seems even the existing public bike infrastructure from OSM is outdated and incorrect.
+Some are wrongly named, some have incorrect info, some have inaccurate location.
+
 I want to mass-edit the OSM data, if possible preview the data before upload.
-Potentially keep the description from some nodes that might be useful.
+I might potentially keep the description from some nodes that might be useful.
 
-I managed to download the OSM data using https://overpass-turbo.eu/#
-I got 131 stations.
+So, how do I go about doing this without manual input?!
 
 What I still need to do :
 
@@ -18,7 +21,9 @@ What I still need to do :
     - conflicting names : keep the OSM name in description if informative, keep other languages descriptions
   - identify stations from OSM that do not appear on the official data (hopefully none)
 
-- 
+- upload to OSM
+
+- contact seoul bike because map doesn't work on firefox
 
 bounding box : 37.7 / 126.6 => 37.4 / 127.2
 
