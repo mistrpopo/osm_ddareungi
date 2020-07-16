@@ -1,0 +1,36 @@
+================================================
+============OPENSTREETMAP DATA==================
+================================================
+     type          id        lat         lon         amenity            name   name:ko  ... payment:credit_cards payment:kakaopay payment:payco  fee operator:type description nodes
+0    node  2494929981  37.544822  127.119383  bicycle_rental    Bicycle park  광나루자전거공원  ...                  NaN              NaN           NaN  NaN           NaN         NaN   NaN
+1    node  2712656848  37.556429  126.894049  bicycle_rental  Seongsandaekyo       NaN  ...                  NaN              NaN           NaN  NaN           NaN         NaN   NaN
+2    node  2830778635  37.531210  126.876021  bicycle_rental   양천구 자전거 무료대여소       NaN  ...                  NaN              NaN           NaN  NaN           NaN         NaN   NaN
+3    node  3414087346  37.565158  126.880221  bicycle_rental             NaN       NaN  ...                  NaN              NaN           NaN  NaN           NaN         NaN   NaN
+4    node  3693412479  37.471544  127.050642  bicycle_rental         구룡사 삼거리       NaN  ...                  NaN              NaN           NaN  NaN           NaN         NaN   NaN
+..    ...         ...        ...         ...             ...             ...       ...  ...                  ...              ...           ...  ...           ...         ...   ...
+128  node  4631214691  37.578699  127.071910             NaN             NaN       NaN  ...                  NaN              NaN           NaN  NaN           NaN         NaN   NaN
+129  node  4631214692  37.578618  127.071822             NaN             NaN       NaN  ...                  NaN              NaN           NaN  NaN           NaN         NaN   NaN
+130  node  4631214693  37.578592  127.071851             NaN             NaN       NaN  ...                  NaN              NaN           NaN  NaN           NaN         NaN   NaN
+131  node  4631214694  37.578685  127.071924             NaN             NaN       NaN  ...                  NaN              NaN           NaN  NaN           NaN         NaN   NaN
+132  node  4631271453  37.578644  127.071856             NaN             NaN       NaN  ...                  NaN              NaN           NaN  NaN           NaN         NaN   NaN
+
+[133 rows x 32 columns]
+
+
+=====================================================
+============OFFICIAL DDAREUNGI DATA==================
+=====================================================
+     district    id              name                  address   latitude   longitude        open_since  capacity
+0         마포구   101  101. (구)합정동 주민센터       서울특별시 마포구 동교로8길 58  37.549561  126.905754  06/09/2015 23:40         5
+1         마포구   102   102. 망원역 1번출구 앞        서울특별시 마포구 월드컵로 72  37.555649  126.910629  06/09/2015 23:42        20
+2         마포구   103   103. 망원역 2번출구 앞        서울특별시 마포구 월드컵로 79  37.554951  126.910835  06/09/2015 23:43        14
+3         마포구   104   104. 합정역 1번출구 앞         서울특별시 마포구 양화로 59  37.550629  126.914986  06/09/2015 23:44        13
+4         마포구   105   105. 합정역 5번출구 앞         서울특별시 마포구 양화로 48  37.550007  126.914825  06/09/2015 23:45         5
+...       ...   ...               ...                      ...        ...         ...               ...       ...
+1535      마포구   440           하늘공원 입구          마포구 하늘공원로 108-2  37.570006  126.881149        2019.08.02        15
+1536      종로구   464            삼청동 골목               종로구 팔판길 46  37.584190  126.981697        2019.08.16        10
+1537      관악구  2185           대학동 고시촌     서울특별시 관악구 신림로 97 밀라트  37.470467  126.938652        2019.09.26        10
+1538      종로구   465       465. 삼청공원 앞      서울특별시 종로구 삼청동 25-32  37.587605  126.983597        2019.11.20         5
+1539      종로구   664        서울시립대 대학본부  동대문구 서울시립대로 163 서울시립대학교  37.584129  127.057938        2019.11.20        10
+
+[1540 rows x 8 columns]
