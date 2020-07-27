@@ -10,13 +10,50 @@
         <script src="ddareungi_official_data.js"></script>
         <style>
             #map {
-                width: 750px; 
-                height: 750px; 
+                width: 750px;
+                height: 750px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            #mapControls {
+                width: 750px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top:10px;
+                line-height: 2em;
+            }
+            .arrow {
+                border: solid rgb(0, 0, 0);
+                border-width: 0 3px 3px 0;
+                border-radius: 2px;
+                display: inline-block;
+                padding: 3px;
+            }
+
+            .arrow:hover {
+                cursor: pointer;
+            }
+
+            .right {
+                transform: rotate(-45deg);
+            }
+
+            .left {
+                transform: rotate(135deg);
             }
         </style>
     </head>
     <body>
         <div id="map"></div>
+        <div id="mapControls">
+            <label for="lat">Latitude: </label><input id="lat" name="lat"/>
+            <label for="lon">Longitude: </label><input id="lon" name="lon"/>
+            <br />
+            <label for="markerId">Station id: </label><input id="markerId" name="markerId"/>
+            <input type="hidden" id="markerInnerId" name="markerInnerId"/>
+            <div class="arrow left" id="prev"></div>
+            <div class="arrow right" id="next"></div>
+        </div>
 
         
         <script>
@@ -24,7 +61,7 @@
             var testUrl = 'https://{s}.tile.thunderforest.com/cycle/{z}/{x}/{y}.png';
 		    var osmAttrib = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
 		    var osm = L.tileLayer(testUrl, {maxZoom: 18, attribution: osmAttrib});
-            var map = L.map('map').setView([37.6089, 127.0868], 15).addLayer(osm);
+            var map = L.map('map').addLayer(osm);
 
             var ddareungiData = [
                 // { "name": "1610. 화랑대역 2번출구 앞", "lat": 37.620369, "lon": 127.083641} ,
@@ -32,15 +69,15 @@
                 // { "name": "원자력 병원", "lat": 37.628189, "lon": 127.082108}
             ];
 
-            function processData(allText) {
+            function processCsvData(allText) {
                 console.log(allText.length);
                 var recordNum = 8;
                 var allTextLines = allText.split(/\r\n|\n/);
-                console.log(allTextLines.length);
 
                 for (var i = 0; i < allTextLines.length; i++) {
                     var entries = allTextLines[i].split('\t');
                     var data = {};
+                    data["id"] = entries[1];
                     data["name"] = entries[2];
                     data["lat"] = entries[4];
                     data["lon"] = entries[5];
@@ -49,18 +86,51 @@
                 console.log(ddareungiData.length);
             }
             
-            processData(ddareungiDataFullText);
+            processCsvData(ddareungiDataFullText);
             
-            for (var i = 0; i < ddareungiData.length; i++) {
-                var data = ddareungiData[i];
-                if (Math.abs(data["lat"] - 37.6089) < 0.02 && Math.abs(data["lon"] - 127.0868) < 0.02) {
-                    console.log("hello");
-                    L.marker([data["lat"], data["lon"]])
-                        .addTo(map)
-                        .bindPopup(data["name"])
-                        .openPopup();
+            function setPosition(lat, lon) {
+                var addedMarkers = 0;
+                for (var i = 0; i < ddareungiData.length; i++) {
+                    var data = ddareungiData[i];
+                    if (Math.abs(data["lat"] - lat) < 0.01 && Math.abs(data["lon"] - lon) < 0.01) {
+                        if (addedMarkers != 0 && addedMarkers % 100 == 0) {
+                            console.log("Added %d markers", addedMarkers);
+                        }
+                        addedMarkers++;
+                        L.marker([data["lat"], data["lon"]])
+                            .addTo(map)
+                            .bindPopup(data["name"])
+                            .openPopup();
+                    }
                 }
+                console.log("Total %d markers", addedMarkers);
+                map.setView([lat, lon], 15);
+                document.getElementById("lat").value = lat;
+                document.getElementById("lon").value = lon;
             }
+            
+            function setPositionToId(markerInnerId) {
+                var data = ddareungiData[markerInnerId];
+                setPosition(data["lat"], data["lon"]);
+                document.getElementById("markerInnerId").value = markerInnerId;
+                document.getElementById("markerId").value = data["id"];
+            }
+
+            function switchPosition(inc) {
+                markerInnerId = parseInt(document.getElementById("markerInnerId").value);
+                markerInnerId += inc;
+                if (markerInnerId < 0) markerInnerId = ddareungiData.length - 1;
+                if (markerInnerId >= ddareungiData.length) markerInnerId = 0;
+                console.log(markerInnerId);
+                setPositionToId(markerInnerId);
+            }
+
+            
+            document.getElementById("prev").onclick = function(){switchPosition(-1)};
+            document.getElementById("next").onclick = function(){switchPosition(1)};
+
+            setPositionToId(0);
+
         </script>
     </body>
 </html>
