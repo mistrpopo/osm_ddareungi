@@ -50,10 +50,14 @@
             <label for="lat">Latitude: </label><input id="lat" name="lat"/>
             <label for="lon">Longitude: </label><input id="lon" name="lon"/>
             <br />
-            <label for="markerId">Station id: </label><input id="markerId" name="markerId"/>
-            <input type="hidden" id="markerInnerId" name="markerInnerId"/>
+            <label for="markerId">Ddareungi station id: </label><input id="markerId" name="markerId"/>
+            <label for="markerInnerId">(Index in table): </label><input id="markerInnerId" name="markerInnerId"/>
             <div class="arrow left" id="prev"></div>
             <div class="arrow right" id="next"></div>
+            <br />
+            <label for="osmMarkerId">OSM station index: </label><input id="osmMarkerId" name="osmMarkerId"/>
+            <div class="arrow left" id="osmPrev"></div>
+            <div class="arrow right" id="osmNext"></div>
         </div>
 
         
@@ -146,13 +150,29 @@
                 markerInnerId += inc;
                 if (markerInnerId < 0) markerInnerId = ddareungiData.length - 1;
                 if (markerInnerId >= ddareungiData.length) markerInnerId = 0;
-                console.log(markerInnerId);
                 setPositionToId(markerInnerId);
+            }
+
+            function setOsmPosition(osmMarkerId) {
+                var data = osmData[osmMarkerId];
+                setPosition(data["lat"], data["lon"]);
+                document.getElementById("osmMarkerId").value = osmMarkerId;
+            }
+
+            function switchOsmPosition(inc) {
+                if (document.getElementById("osmMarkerId").value == "") document.getElementById("osmMarkerId").value = "0";
+                osmMarkerId = parseInt(document.getElementById("osmMarkerId").value);
+                osmMarkerId += inc;
+                if (osmMarkerId < 0) osmMarkerId = osmData.length - 1;
+                if (osmMarkerId >= osmData.length) osmMarkerId = 0;
+                setOsmPosition(osmMarkerId);
             }
 
             
             document.getElementById("prev").onclick = function(){switchPosition(-1)};
             document.getElementById("next").onclick = function(){switchPosition(1)};
+            document.getElementById("osmPrev").onclick = function(){switchOsmPosition(-1)};
+            document.getElementById("osmNext").onclick = function(){switchOsmPosition(1)};
 
             setPositionToId(0);
 
