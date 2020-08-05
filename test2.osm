@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<osm version='0.6' generator='JOSM'>
+  <bounds minlat='37.62025' minlon='127.08355' maxlat='37.62045' maxlon='127.08375' origin='OpenStreetMap server' />
+  <node id='-1' visible='true' lat='37.620369' lon='127.083641'>
+    <tag k='amenity' v='bicycle_rental' />
+    <tag k='name' v='1610. 화랑대역 2번출구 앞' />
+    <tag k='name:ko' v='1610. 화랑대역 2번출구 앞' />
+    <tag k='name:en' v='1610. In front of Hwarangdae station exit 2' />
+  </node>
+</osm>
