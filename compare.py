@@ -35,9 +35,18 @@ print ("============OFFICIAL DDAREUNGI DATA==================")
 print ("=====================================================")
 print (official_ddareungi_data)
 
+
+# list all districts
+# print (official_ddareungi_data.district.unique())
+allDistricts = [
+    '마포구', '서대문구', '영등포구', '광진구', '성동구', '중구', '종로구', 
+    '동대문구', '양천구', '용산구', '은평구', '강동구', '강서구', '송파구', 
+    '중랑구', '성북구', '노원구', '도봉구', '금천구', '강북구', '구로구', 
+    '동작구', '관악구', '서초구', '강남구']
+
+
 # 133 rows vs 1540 rows
 # TODO : 
-# # flatten the "tags" json in OSM data to access it from pandas
 # # compare data accuracy
 # # search licence info at https://www.data.go.kr
 # # follow the guidelines at https://wiki.openstreetmap.org/wiki/Import/Guidelines

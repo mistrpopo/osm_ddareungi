@@ -58,15 +58,32 @@
             <label for="osmMarkerId">OSM station index: </label><input id="osmMarkerId" name="osmMarkerId"/>
             <div class="arrow left" id="osmPrev"></div>
             <div class="arrow right" id="osmNext"></div>
+            <br />
+            <label for="district">Choose district:</label>
+            <select name="district" id="district">
+                <option value="none">None</option>
+            </select>
         </div>
 
         
         <script>
+            var allDistricts = [
+                '마포구', '서대문구', '영등포구', '광진구', '성동구', '중구', '종로구', 
+                '동대문구', '양천구', '용산구', '은평구', '강동구', '강서구', '송파구', 
+                '중랑구', '성북구', '노원구', '도봉구', '금천구', '강북구', '구로구', 
+                '동작구', '관악구', '서초구', '강남구'];
+            for (var x = 0; x < allDistricts.length; x++) {
+                var option = document.createElement("option");
+                option.text = allDistricts[x];
+                document.getElementById("district").add(option);
+            }
+
             var osmUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
             var testUrl = 'https://{s}.tile.thunderforest.com/cycle/{z}/{x}/{y}.png';
 		    var osmAttrib = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
 		    var osm = L.tileLayer(testUrl, {maxZoom: 18, attribution: osmAttrib});
             var map = L.map('map').addLayer(osm);
+            var allMarkers = [];
 
             var greenIcon = new L.Icon({
                 iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
@@ -92,6 +109,7 @@
                 for (var i = 0; i < allTextLines.length; i++) {
                     var entries = allTextLines[i].split('\t');
                     var data = {};
+                    data["district"] = entries[0];
                     data["id"] = entries[1];
                     data["name"] = entries[2];
                     data["lat"] = entries[4];
@@ -103,7 +121,15 @@
             
             processCsvData(ddareungiDataFullText);
             
+            function clearAllMarkers() {
+                for (var x = 0; x < allMarkers.length; x++) {
+                    map.removeLayer(allMarkers[x]);
+                }
+                allMarkers = [];
+            }
+
             function setPosition(lat, lon) {
+                clearAllMarkers();
                 var addedMarkers = 0;
                 for (var i = 0; i < ddareungiData.length; i++) {
                     var data = ddareungiData[i];
@@ -112,10 +138,9 @@
                             console.log("Added %d markers", addedMarkers);
                         }
                         addedMarkers++;
-                        L.marker([data["lat"], data["lon"]])
-                            .addTo(map)
-                            .bindPopup(data["name"])
-                            .openPopup();
+                        var m = L.marker([data["lat"], data["lon"]]);
+                        allMarkers.push(m);
+                        m.addTo(map).bindPopup(data["name"]).openPopup();
                     }
                 }
                 for (var i = 0; i < osmData.length; i++) {
@@ -125,11 +150,12 @@
                             console.log("Added %d markers", addedMarkers);
                         }
                         addedMarkers++;
-                        console.log(data["tags"]["name"]);
-                        L.marker([data["lat"], data["lon"]], {icon: greenIcon})
-                            .addTo(map)
-                            .bindPopup(data["tags"]["name"])
-                            .openPopup();
+                        var m = L.marker([data["lat"], data["lon"]], {icon: greenIcon});
+                        allMarkers.push(m);
+                        m.addTo(map);
+                        if ("tags" in data && "name" in data["tags"]) {
+                            m.bindPopup(data["tags"]["name"]);
+                        }
                     }
                 }
                 console.log("Total %d markers", addedMarkers);
@@ -168,13 +194,58 @@
                 setOsmPosition(osmMarkerId);
             }
 
-            
             document.getElementById("prev").onclick = function(){switchPosition(-1)};
             document.getElementById("next").onclick = function(){switchPosition(1)};
             document.getElementById("osmPrev").onclick = function(){switchOsmPosition(-1)};
             document.getElementById("osmNext").onclick = function(){switchOsmPosition(1)};
 
             setPositionToId(0);
+
+            function loadDistrictMarkers(districtName) {
+                clearAllMarkers();
+                var addedMarkers = 0;
+                var minLat = 9999, maxLat = 0, avgLat = 0,
+                    minLon = 9999, maxLon = 0, avgLon = 0;
+                for (var i = 0; i < ddareungiData.length; i++) {
+                    var data = ddareungiData[i];
+                    if (data["district"] == districtName) {
+                        if (addedMarkers != 0 && addedMarkers % 100 == 0) {
+                            console.log("Added %d markers", addedMarkers);
+                        }
+                        addedMarkers++;
+                        var m = L.marker([data["lat"], data["lon"]]);
+                        allMarkers.push(m);
+                        m.addTo(map).bindPopup(data["name"]);
+                        minLat = Math.min(minLat, data["lat"]);
+                        maxLat = Math.max(maxLat, data["lat"]);
+                        minLon = Math.min(minLon, data["lon"]);
+                        maxLon = Math.max(maxLon, data["lon"]);
+                    }
+                }
+                for (var i = 0; i < osmData.length; i++) {
+                    var data = osmData[i];
+                    if (data["lat"] > minLat && data["lat"] < maxLat && data["lon"] > minLon && data["lon"] < maxLon) {
+                        if (addedMarkers != 0 && addedMarkers % 100 == 0) {
+                            console.log("Added %d markers", addedMarkers);
+                        }
+                        addedMarkers++;
+                        var m = L.marker([data["lat"], data["lon"]], {icon: greenIcon});
+                        allMarkers.push(m);
+                        m.addTo(map);
+                        if ("tags" in data && "name" in data["tags"]) {
+                            m.bindPopup(data["tags"]["name"]);
+                        }
+                    }
+                }
+                console.log("Total %d markers", addedMarkers);
+                avgLat = (minLat + maxLat) / 2;
+                avgLon = (minLon + maxLon) / 2;
+                map.setView([avgLat, avgLon], 14); //less zoom
+                document.getElementById("lat").value = avgLat;
+                document.getElementById("lon").value = avgLon;
+            }
+            
+            document.getElementById("district").onchange = function(){loadDistrictMarkers(this.options[this.selectedIndex].text);};
 
         </script>
     </body>
