@@ -63,6 +63,8 @@
             <select name="district" id="district">
                 <option value="none">None</option>
             </select>
+            <br />
+            <button id="export">Export</button>
         </div>
 
         
@@ -249,6 +251,12 @@
             }
             
             document.getElementById("district").onchange = function(){loadDistrictMarkers(this.options[this.selectedIndex].text);};
+
+            function exportMarkers() {
+                alert("todo");
+            }
+
+            document.getElementById("export").onclick = exportMarkers;
 
         </script>
     </body>
