@@ -140,7 +140,10 @@
                         addedMarkers++;
                         var m = L.marker([data["lat"], data["lon"]]);
                         allMarkers.push(m);
-                        m.addTo(map).bindPopup(data["name"]).openPopup();
+                        m.addTo(map).bindPopup(data["name"]);
+                        if (Math.abs(data["lat"] - lat) < 0.0001 && Math.abs(data["lon"] - lon) < 0.0001) {
+                            m.openPopup();
+                        }
                     }
                 }
                 for (var i = 0; i < osmData.length; i++) {
