@@ -253,7 +253,39 @@
             document.getElementById("district").onchange = function(){loadDistrictMarkers(this.options[this.selectedIndex].text);};
 
             function exportMarkers() {
-                alert("todo");
+                var josmCore = "";
+                var minLat = 9999, maxLat = 0, avgLat = 0,
+                    minLon = 9999, maxLon = 0, avgLon = 0;
+                for (var x = 0; x < allMarkers.length; x++) {
+                    //todo filter only the official data
+                    var marker = allMarkers[x];
+                    var lat = marker.getLatLng().lat;
+                    var lon = marker.getLatLng().lng;
+                    var name = "sdf"; //todo bind all necessary info in a struct in the allMarkers array
+                    var ref = 0; //todo
+                    var capacity = 0; //todo
+                    var nodeXml = `
+<node id='-1' visible='true' lat='${lat}' lon='${lon}'>
+    <tag k='amenity' v='bicycle_rental' />
+    <tag k='name' v='${name}' />
+    <tag k='name:ko' v='${name}' />
+    <tag k='ref' v='${ref}' />
+    <tag k='capacity' v='${capacity}' />
+    <tag k='network' v='서울자전거 (Seoul Bike) 따릉이' />
+    <tag k='operator' v='서울자전거 (Seoul Bike) 따릉이' />
+    <tag k='website' v='https://www.bikeseoul.com' />
+</node>`;
+                    josmCore += nodeXml;
+                    minLat = Math.min(minLat, lat);
+                    maxLat = Math.max(maxLat, lat);
+                    minLon = Math.min(minLon, lon);
+                    maxLon = Math.max(maxLon, lon);
+                }
+                var josmHeader = `<?xml version='1.0' encoding='UTF-8'?><osm version='0.6' generator='JOSM'><bounds minlat='${minLat}' minlon='${minLon}' maxlat='${maxLat}' maxlon='${maxLon}' origin='OpenStreetMap server' />`;
+                var josmFooter = "</osm>";
+                var josm = josmHeader + josmCore + josmFooter;
+                console.log(josm);
+                alert("done");
             }
 
             document.getElementById("export").onclick = exportMarkers;
