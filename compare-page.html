@@ -113,9 +113,12 @@
                     var data = {};
                     data["district"] = entries[0];
                     data["id"] = entries[1];
-                    data["name"] = entries[2];
+                    data["name"] = entries[2]; //todo: some entries are written as "id. name" => remove id
+                    data["address"] = entries[3];
                     data["lat"] = entries[4];
                     data["lon"] = entries[5];
+                    data["openingDate"] = entries[6];
+                    data["capacity"] = entries[7];
                     ddareungiData.push(data);
                 }
                 console.log(ddareungiData.length);
@@ -125,7 +128,7 @@
             
             function clearAllMarkers() {
                 for (var x = 0; x < allMarkers.length; x++) {
-                    map.removeLayer(allMarkers[x]);
+                    map.removeLayer(allMarkers[x].marker);
                 }
                 allMarkers = [];
             }
@@ -141,7 +144,10 @@
                         }
                         addedMarkers++;
                         var m = L.marker([data["lat"], data["lon"]]);
-                        allMarkers.push(m);
+                        allMarkers.push({
+                            marker: m,
+                            type: "ddareungi",
+                            data: data});
                         m.addTo(map).bindPopup(data["name"]);
                         if (Math.abs(data["lat"] - lat) < 0.0001 && Math.abs(data["lon"] - lon) < 0.0001) {
                             m.openPopup();
@@ -156,7 +162,10 @@
                         }
                         addedMarkers++;
                         var m = L.marker([data["lat"], data["lon"]], {icon: greenIcon});
-                        allMarkers.push(m);
+                        allMarkers.push({
+                            marker: m,
+                            type: "osm",
+                            data: data});
                         m.addTo(map);
                         if ("tags" in data && "name" in data["tags"]) {
                             m.bindPopup(data["tags"]["name"]);
@@ -219,7 +228,10 @@
                         }
                         addedMarkers++;
                         var m = L.marker([data["lat"], data["lon"]]);
-                        allMarkers.push(m);
+                        allMarkers.push({
+                            marker: m,
+                            type: "ddareungi",
+                            data: data});
                         m.addTo(map).bindPopup(data["name"]);
                         minLat = Math.min(minLat, data["lat"]);
                         maxLat = Math.max(maxLat, data["lat"]);
@@ -235,7 +247,10 @@
                         }
                         addedMarkers++;
                         var m = L.marker([data["lat"], data["lon"]], {icon: greenIcon});
-                        allMarkers.push(m);
+                        allMarkers.push({
+                            marker: m,
+                            type: "osm",
+                            data: data});
                         m.addTo(map);
                         if ("tags" in data && "name" in data["tags"]) {
                             m.bindPopup(data["tags"]["name"]);
@@ -257,13 +272,15 @@
                 var minLat = 9999, maxLat = 0, avgLat = 0,
                     minLon = 9999, maxLon = 0, avgLon = 0;
                 for (var x = 0; x < allMarkers.length; x++) {
-                    //todo filter only the official data
-                    var marker = allMarkers[x];
+                    //filter only the official data
+                    if (allMarkers[x].type != "ddareungi") continue;
+                    var marker = allMarkers[x].marker;
                     var lat = marker.getLatLng().lat;
                     var lon = marker.getLatLng().lng;
-                    var name = "sdf"; //todo bind all necessary info in a struct in the allMarkers array
-                    var ref = 0; //todo
-                    var capacity = 0; //todo
+                    var data = allMarkers[x].data;
+                    var name = data["name"];
+                    var ref = data["id"];
+                    var capacity = data["capacity"];
                     var nodeXml = `
 <node id='-1' visible='true' lat='${lat}' lon='${lon}'>
     <tag k='amenity' v='bicycle_rental' />
@@ -271,8 +288,8 @@
     <tag k='name:ko' v='${name}' />
     <tag k='ref' v='${ref}' />
     <tag k='capacity' v='${capacity}' />
-    <tag k='network' v='서울자전거 (Seoul Bike) 따릉이' />
-    <tag k='operator' v='서울자전거 (Seoul Bike) 따릉이' />
+    <tag k='network' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='operator' v='서울자전거 따릉이 (Seoul Bike)' />
     <tag k='website' v='https://www.bikeseoul.com' />
 </node>`;
                     josmCore += nodeXml;
