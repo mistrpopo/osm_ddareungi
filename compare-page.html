@@ -267,6 +267,7 @@
             
             document.getElementById("district").onchange = function(){loadDistrictMarkers(this.options[this.selectedIndex].text);};
 
+            var osmNodeIdCounter = 1;
             function exportMarkers() {
                 var josmCore = "";
                 var minLat = 9999, maxLat = 0, avgLat = 0,
@@ -281,8 +282,10 @@
                     var name = data["name"];
                     var ref = data["id"];
                     var capacity = data["capacity"];
+                    var nodeId = -osmNodeIdCounter;
+                    osmNodeIdCounter += 1;
                     var nodeXml = `
-<node id='-1' visible='true' lat='${lat}' lon='${lon}'>
+<node id='${nodeId}' visible='true' lat='${lat}' lon='${lon}'>
     <tag k='amenity' v='bicycle_rental' />
     <tag k='name' v='${name}' />
     <tag k='name:ko' v='${name}' />

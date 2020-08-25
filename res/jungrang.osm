@@ -1,0 +1,537 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<osm version='0.6' generator='JOSM'>
+  <bounds minlat='37.573589' minlon='127.07267' maxlat='37.620098' maxlon='127.110733' origin='OpenStreetMap server' />
+  <node id='-104682' action='modify' visible='true' lat='37.61472312734' lon='127.07637641105'>
+    <tag k='amenity' v='bicycle_rental' />
+    <tag k='capacity' v='15' />
+    <tag k='name' v='1401. 극동늘푸른아파트' />
+    <tag k='name:en' v='1401. Geukdong Neulpurun Apartment Complex' />
+    <tag k='name:ko' v='1401. 극동늘푸른아파트' />
+    <tag k='network' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='operator' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='ref' v='1401' />
+    <tag k='website' v='https://www.bikeseoul.com' />
+  </node>
+  <node id='-104683' visible='true' lat='37.600071' lon='127.102333'>
+    <tag k='amenity' v='bicycle_rental' />
+    <tag k='capacity' v='10' />
+    <tag k='name' v='1402. 금란주차장 앞' />
+    <tag k='name:ko' v='1402. 금란주차장 앞' />
+    <tag k='network' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='operator' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='ref' v='1402' />
+    <tag k='website' v='https://www.bikeseoul.com' />
+  </node>
+  <node id='-104684' visible='true' lat='37.59425' lon='127.076576'>
+    <tag k='amenity' v='bicycle_rental' />
+    <tag k='capacity' v='15' />
+    <tag k='name' v='1403. 중화빌딩 앞 (동부시장)' />
+    <tag k='name:ko' v='1403. 중화빌딩 앞 (동부시장)' />
+    <tag k='network' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='operator' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='ref' v='1403' />
+    <tag k='website' v='https://www.bikeseoul.com' />
+  </node>
+  <node id='-104685' visible='true' lat='37.599098' lon='127.092949'>
+    <tag k='amenity' v='bicycle_rental' />
+    <tag k='capacity' v='10' />
+    <tag k='name' v='1405. 망우역 1번출구' />
+    <tag k='name:ko' v='1405. 망우역 1번출구' />
+    <tag k='network' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='operator' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='ref' v='1405' />
+    <tag k='website' v='https://www.bikeseoul.com' />
+  </node>
+  <node id='-104686' visible='true' lat='37.606251' lon='127.108269'>
+    <tag k='amenity' v='bicycle_rental' />
+    <tag k='capacity' v='10' />
+    <tag k='name' v='1406. 망우청소년수련관' />
+    <tag k='name:ko' v='1406. 망우청소년수련관' />
+    <tag k='network' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='operator' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='ref' v='1406' />
+    <tag k='website' v='https://www.bikeseoul.com' />
+  </node>
+  <node id='-104687' action='modify' visible='true' lat='37.61072731195' lon='127.07752259755'>
+    <tag k='amenity' v='bicycle_rental' />
+    <tag k='capacity' v='10' />
+    <tag k='name' v='1408. 먹골역 6번출구 앞' />
+    <tag k='name:en' v='1408. Exit 6 of Meokgol Station' />
+    <tag k='name:ko' v='1408. 먹골역 6번출구 앞' />
+    <tag k='network' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='operator' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='ref' v='1408' />
+    <tag k='website' v='https://www.bikeseoul.com' />
+  </node>
+  <node id='-104688' visible='true' lat='37.577782' lon='127.090187'>
+    <tag k='amenity' v='bicycle_rental' />
+    <tag k='capacity' v='10' />
+    <tag k='name' v='1410. 면목 대원칸타빌아파트' />
+    <tag k='name:ko' v='1410. 면목 대원칸타빌아파트' />
+    <tag k='network' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='operator' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='ref' v='1410' />
+    <tag k='website' v='https://www.bikeseoul.com' />
+  </node>
+  <node id='-104689' visible='true' lat='37.590961' lon='127.087067'>
+    <tag k='amenity' v='bicycle_rental' />
+    <tag k='capacity' v='10' />
+    <tag k='name' v='1412. 면목초등학교' />
+    <tag k='name:ko' v='1412. 면목초등학교' />
+    <tag k='network' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='operator' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='ref' v='1412' />
+    <tag k='website' v='https://www.bikeseoul.com' />
+  </node>
+  <node id='-104690' action='modify' visible='true' lat='37.61761092772' lon='127.09043238161'>
+    <tag k='amenity' v='bicycle_rental' />
+    <tag k='capacity' v='10' />
+    <tag k='name' v='1413. 봉화산역 5번출구 뒤' />
+    <tag k='name:en' v='1413. Behind Exit 5 of Bonghwasan Station' />
+    <tag k='name:ko' v='1413. 봉화산역 5번출구 뒤' />
+    <tag k='network' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='operator' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='ref' v='1413' />
+    <tag k='website' v='https://www.bikeseoul.com' />
+  </node>
+  <node id='-104691' action='modify' visible='true' lat='37.61750459589' lon='127.10906678504'>
+    <tag k='amenity' v='bicycle_rental' />
+    <tag k='capacity' v='15' />
+    <tag k='name' v='1418. 새솔초등학교' />
+    <tag k='name:en' v='1418. Saesol Elementary School' />
+    <tag k='name:ko' v='1418. 새솔초등학교' />
+    <tag k='network' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='operator' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='ref' v='1418' />
+    <tag k='website' v='https://www.bikeseoul.com' />
+  </node>
+  <node id='-104692' action='modify' visible='true' lat='37.616711' lon='127.110733'>
+    <tag k='amenity' v='bicycle_rental' />
+    <tag k='capacity' v='15' />
+    <tag k='name' v='1441. 신내능말공원' />
+    <tag k='name:en' v='1441. Sinnae Neungmal Park' />
+    <tag k='name:ko' v='1441. 신내능말공원' />
+    <tag k='network' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='operator' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='ref' v='1441' />
+    <tag k='website' v='https://www.bikeseoul.com' />
+  </node>
+  <node id='-104693' action='modify' visible='true' lat='37.61429261569' lon='127.09666207606'>
+    <tag k='amenity' v='bicycle_rental' />
+    <tag k='capacity' v='15' />
+    <tag k='name' v='1420. 신내어울공원 앞' />
+    <tag k='name:en' v='1420. Sinnae Oul Park' />
+    <tag k='name:ko' v='1420. 신내어울공원 앞' />
+    <tag k='network' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='operator' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='ref' v='1420' />
+    <tag k='website' v='https://www.bikeseoul.com' />
+  </node>
+  <node id='-104694' action='modify' visible='true' lat='37.61246949892' lon='127.10335386012'>
+    <tag k='amenity' v='bicycle_rental' />
+    <tag k='capacity' v='20' />
+    <tag k='name' v='1421. 신내역 4번출구' />
+    <tag k='name:en' v='1421. Exit 4 of Sinnae Station' />
+    <tag k='name:ko' v='1421. 신내역 4번출구' />
+    <tag k='network' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='operator' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='ref' v='1421' />
+    <tag k='website' v='https://www.bikeseoul.com' />
+  </node>
+  <node id='-104695' action='modify' visible='true' lat='37.62007463036' lon='127.10650123314'>
+    <tag k='amenity' v='bicycle_rental' />
+    <tag k='capacity' v='10' />
+    <tag k='name' v='1422. 신내우디안아파트 1단지' />
+    <tag k='name:en' v='1422. Sinnae Woodyan 1-dangi Apartment Complex' />
+    <tag k='name:ko' v='1422. 신내우디안아파트 1단지' />
+    <tag k='network' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='operator' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='ref' v='1422' />
+    <tag k='website' v='https://www.bikeseoul.com' />
+  </node>
+  <node id='-104696' visible='true' lat='37.606312' lon='127.107742'>
+    <tag k='amenity' v='bicycle_rental' />
+    <tag k='capacity' v='10' />
+    <tag k='name' v='1424. 양원역 2번출구' />
+    <tag k='name:ko' v='1424. 양원역 2번출구' />
+    <tag k='network' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='operator' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='ref' v='1424' />
+    <tag k='website' v='https://www.bikeseoul.com' />
+  </node>
+  <node id='-104697' visible='true' lat='37.58746' lon='127.09597'>
+    <tag k='amenity' v='bicycle_rental' />
+    <tag k='capacity' v='10' />
+    <tag k='name' v='1425. 용마문화복지센터' />
+    <tag k='name:ko' v='1425. 용마문화복지센터' />
+    <tag k='network' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='operator' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='ref' v='1425' />
+    <tag k='website' v='https://www.bikeseoul.com' />
+  </node>
+  <node id='-104698' visible='true' lat='37.573589' lon='127.086823'>
+    <tag k='amenity' v='bicycle_rental' />
+    <tag k='capacity' v='15' />
+    <tag k='name' v='1426. 면목도시개발아파트 1동 앞' />
+    <tag k='name:ko' v='1426. 면목도시개발아파트 1동 앞' />
+    <tag k='network' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='operator' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='ref' v='1426' />
+    <tag k='website' v='https://www.bikeseoul.com' />
+  </node>
+  <node id='-104699' visible='true' lat='37.579868' lon='127.082367'>
+    <tag k='amenity' v='bicycle_rental' />
+    <tag k='capacity' v='15' />
+    <tag k='name' v='1434. 홈플러스 면목동점' />
+    <tag k='name:ko' v='1434. 홈플러스 면목동점' />
+    <tag k='network' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='operator' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='ref' v='1434' />
+    <tag k='website' v='https://www.bikeseoul.com' />
+  </node>
+  <node id='-104700' action='modify' visible='true' lat='37.608681' lon='127.10081479878'>
+    <tag k='amenity' v='bicycle_rental' />
+    <tag k='capacity' v='15' />
+    <tag k='name' v='1435. 능산삼거리' />
+    <tag k='name:en' v='1435. Neungsan Three-way Intersection' />
+    <tag k='name:ko' v='1435. 능산삼거리' />
+    <tag k='network' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='operator' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='ref' v='1435' />
+    <tag k='website' v='https://www.bikeseoul.com' />
+  </node>
+  <node id='-104701' visible='true' lat='37.605881' lon='127.100632'>
+    <tag k='amenity' v='bicycle_rental' />
+    <tag k='capacity' v='15' />
+    <tag k='name' v='1436. 영풍마드레빌' />
+    <tag k='name:ko' v='1436. 영풍마드레빌' />
+    <tag k='network' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='operator' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='ref' v='1436' />
+    <tag k='website' v='https://www.bikeseoul.com' />
+  </node>
+  <node id='-104702' visible='true' lat='37.58342' lon='127.079926'>
+    <tag k='amenity' v='bicycle_rental' />
+    <tag k='capacity' v='15' />
+    <tag k='name' v='1437. 늘푸른공원 앞' />
+    <tag k='name:ko' v='1437. 늘푸른공원 앞' />
+    <tag k='network' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='operator' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='ref' v='1437' />
+    <tag k='website' v='https://www.bikeseoul.com' />
+  </node>
+  <node id='-104703' action='modify' visible='true' lat='37.616169' lon='127.093483'>
+    <tag k='amenity' v='bicycle_rental' />
+    <tag k='capacity' v='15' />
+    <tag k='name' v='1438. 홈플러스 신내점 앞' />
+    <tag k='name:en' v='1438. Homeplus (Sinnae Branch)' />
+    <tag k='name:ko' v='1438. 홈플러스 신내점 앞' />
+    <tag k='network' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='operator' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='ref' v='1438' />
+    <tag k='website' v='https://www.bikeseoul.com' />
+  </node>
+  <node id='-104704' visible='true' lat='37.595299' lon='127.080032'>
+    <tag k='amenity' v='bicycle_rental' />
+    <tag k='capacity' v='10' />
+    <tag k='name' v='1404. 동일로 지하차도' />
+    <tag k='name:ko' v='1404. 동일로 지하차도' />
+    <tag k='network' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='operator' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='ref' v='1404' />
+    <tag k='website' v='https://www.bikeseoul.com' />
+  </node>
+  <node id='-104705' action='modify' visible='true' lat='37.61146744246' lon='127.07786520122'>
+    <tag k='amenity' v='bicycle_rental' />
+    <tag k='capacity' v='10' />
+    <tag k='name' v='1407. 먹골역 1번출구 뒤' />
+    <tag k='name:en' v='1407. Behind Exit 1 of Meokgol Station' />
+    <tag k='name:ko' v='1407. 먹골역 1번출구 뒤' />
+    <tag k='network' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='operator' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='ref' v='1407' />
+    <tag k='website' v='https://www.bikeseoul.com' />
+  </node>
+  <node id='-104706' visible='true' lat='37.581646' lon='127.088432'>
+    <tag k='amenity' v='bicycle_rental' />
+    <tag k='capacity' v='10' />
+    <tag k='name' v='1414. 사가정역 1번출구' />
+    <tag k='name:ko' v='1414. 사가정역 1번출구' />
+    <tag k='network' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='operator' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='ref' v='1414' />
+    <tag k='website' v='https://www.bikeseoul.com' />
+  </node>
+  <node id='-104707' visible='true' lat='37.595219' lon='127.085999'>
+    <tag k='amenity' v='bicycle_rental' />
+    <tag k='capacity' v='10' />
+    <tag k='name' v='1416. 상봉역 3번출구' />
+    <tag k='name:ko' v='1416. 상봉역 3번출구' />
+    <tag k='network' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='operator' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='ref' v='1416' />
+    <tag k='website' v='https://www.bikeseoul.com' />
+  </node>
+  <node id='-104708' visible='true' lat='37.574299' lon='127.086914'>
+    <tag k='amenity' v='bicycle_rental' />
+    <tag k='capacity' v='10' />
+    <tag k='name' v='1427. 용마산역 1번출구' />
+    <tag k='name:ko' v='1427. 용마산역 1번출구' />
+    <tag k='network' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='operator' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='ref' v='1427' />
+    <tag k='website' v='https://www.bikeseoul.com' />
+  </node>
+  <node id='-104709' action='modify' visible='true' lat='37.616024' lon='127.085968'>
+    <tag k='amenity' v='bicycle_rental' />
+    <tag k='capacity' v='10' />
+    <tag k='name' v='1428. 원묵고등학교' />
+    <tag k='name:en' v='1428. Wonmook High School' />
+    <tag k='name:ko' v='1428. 원묵고등학교' />
+    <tag k='network' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='operator' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='ref' v='1428' />
+    <tag k='website' v='https://www.bikeseoul.com' />
+  </node>
+  <node id='-104710' visible='true' lat='37.599957' lon='127.080002'>
+    <tag k='amenity' v='bicycle_rental' />
+    <tag k='capacity' v='15' />
+    <tag k='name' v='1429. 장안중학교' />
+    <tag k='name:ko' v='1429. 장안중학교' />
+    <tag k='network' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='operator' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='ref' v='1429' />
+    <tag k='website' v='https://www.bikeseoul.com' />
+  </node>
+  <node id='-104711' visible='true' lat='37.606152' lon='127.092598'>
+    <tag k='amenity' v='bicycle_rental' />
+    <tag k='capacity' v='20' />
+    <tag k='name' v='1430. 중랑구청' />
+    <tag k='name:ko' v='1430. 중랑구청' />
+    <tag k='network' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='operator' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='ref' v='1430' />
+    <tag k='website' v='https://www.bikeseoul.com' />
+  </node>
+  <node id='-104712' visible='true' lat='37.606499' lon='127.095451'>
+    <tag k='amenity' v='bicycle_rental' />
+    <tag k='capacity' v='10' />
+    <tag k='name' v='1431. 중랑구청 사거리' />
+    <tag k='name:ko' v='1431. 중랑구청 사거리' />
+    <tag k='network' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='operator' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='ref' v='1431' />
+    <tag k='website' v='https://www.bikeseoul.com' />
+  </node>
+  <node id='-104713' visible='true' lat='37.602077' lon='127.079582'>
+    <tag k='amenity' v='bicycle_rental' />
+    <tag k='capacity' v='10' />
+    <tag k='name' v='1433. 중화역 2번출구' />
+    <tag k='name:ko' v='1433. 중화역 2번출구' />
+    <tag k='network' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='operator' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='ref' v='1433' />
+    <tag k='website' v='https://www.bikeseoul.com' />
+  </node>
+  <node id='-104714' visible='true' lat='37.592541' lon='127.086739'>
+    <tag k='amenity' v='bicycle_rental' />
+    <tag k='capacity' v='10' />
+    <tag k='name' v='1411. 상봉시장앞 교차로 한성빌딩 앞' />
+    <tag k='name:ko' v='1411. 상봉시장앞 교차로 한성빌딩 앞' />
+    <tag k='network' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='operator' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='ref' v='1411' />
+    <tag k='website' v='https://www.bikeseoul.com' />
+  </node>
+  <node id='-104715' visible='true' lat='37.586372' lon='127.08007'>
+    <tag k='amenity' v='bicycle_rental' />
+    <tag k='capacity' v='10' />
+    <tag k='name' v='1440. 하나은행 면목지점' />
+    <tag k='name:ko' v='1440. 하나은행 면목지점' />
+    <tag k='network' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='operator' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='ref' v='1440' />
+    <tag k='website' v='https://www.bikeseoul.com' />
+  </node>
+  <node id='-104716' visible='true' lat='37.598591' lon='127.079819'>
+    <tag k='amenity' v='bicycle_rental' />
+    <tag k='capacity' v='8' />
+    <tag k='name' v='1442. (구)신한은행 중랑교지점' />
+    <tag k='name:ko' v='1442. (구)신한은행 중랑교지점' />
+    <tag k='network' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='operator' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='ref' v='1442' />
+    <tag k='website' v='https://www.bikeseoul.com' />
+  </node>
+  <node id='-104717' visible='true' lat='37.59552' lon='127.098778'>
+    <tag k='amenity' v='bicycle_rental' />
+    <tag k='capacity' v='10' />
+    <tag k='name' v='1443. 구립망우청소년독서실' />
+    <tag k='name:ko' v='1443. 구립망우청소년독서실' />
+    <tag k='network' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='operator' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='ref' v='1443' />
+    <tag k='website' v='https://www.bikeseoul.com' />
+  </node>
+  <node id='-104718' visible='true' lat='37.574028' lon='127.080544'>
+    <tag k='amenity' v='bicycle_rental' />
+    <tag k='capacity' v='10' />
+    <tag k='name' v='1444. 면목4치안센터' />
+    <tag k='name:ko' v='1444. 면목4치안센터' />
+    <tag k='network' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='operator' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='ref' v='1444' />
+    <tag k='website' v='https://www.bikeseoul.com' />
+  </node>
+  <node id='-104719' visible='true' lat='37.579941' lon='127.079399'>
+    <tag k='amenity' v='bicycle_rental' />
+    <tag k='capacity' v='10' />
+    <tag k='name' v='1445. 용마지구대' />
+    <tag k='name:ko' v='1445. 용마지구대' />
+    <tag k='network' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='operator' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='ref' v='1445' />
+    <tag k='website' v='https://www.bikeseoul.com' />
+  </node>
+  <node id='-104720' visible='true' lat='37.591301' lon='127.08033'>
+    <tag k='amenity' v='bicycle_rental' />
+    <tag k='capacity' v='10' />
+    <tag k='name' v='1446. 중랑전화국 교차로' />
+    <tag k='name:ko' v='1446. 중랑전화국 교차로' />
+    <tag k='network' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='operator' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='ref' v='1446' />
+    <tag k='website' v='https://www.bikeseoul.com' />
+  </node>
+  <node id='-104721' visible='true' lat='37.588902' lon='127.08728'>
+    <tag k='amenity' v='bicycle_rental' />
+    <tag k='capacity' v='15' />
+    <tag k='name' v='1447. 면목역 3번출구' />
+    <tag k='name:ko' v='1447. 면목역 3번출구' />
+    <tag k='network' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='operator' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='ref' v='1447' />
+    <tag k='website' v='https://www.bikeseoul.com' />
+  </node>
+  <node id='-104722' visible='true' lat='37.597321' lon='127.089798'>
+    <tag k='amenity' v='bicycle_rental' />
+    <tag k='capacity' v='15' />
+    <tag k='name' v='1448. 코스트코 상봉점' />
+    <tag k='name:ko' v='1448. 코스트코 상봉점' />
+    <tag k='network' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='operator' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='ref' v='1448' />
+    <tag k='website' v='https://www.bikeseoul.com' />
+  </node>
+  <node id='-104723' visible='true' lat='37.596558' lon='127.085838'>
+    <tag k='amenity' v='bicycle_rental' />
+    <tag k='capacity' v='15' />
+    <tag k='name' v='1449. 상봉역 1번출구' />
+    <tag k='name:ko' v='1449. 상봉역 1번출구' />
+    <tag k='network' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='operator' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='ref' v='1449' />
+    <tag k='website' v='https://www.bikeseoul.com' />
+  </node>
+  <node id='-104724' action='modify' visible='true' lat='37.61972538377' lon='127.08515749818'>
+    <tag k='amenity' v='bicycle_rental' />
+    <tag k='capacity' v='10' />
+    <tag k='name' v='1450. 화랑대역 7번출구' />
+    <tag k='name:en' v='1450. Exit 7 of Hwarangdae Station' />
+    <tag k='name:ko' v='1450. 화랑대역 7번출구' />
+    <tag k='network' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='operator' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='ref' v='1450' />
+    <tag k='website' v='https://www.bikeseoul.com' />
+  </node>
+  <node id='-104725' visible='true' lat='37.592758' lon='127.07267'>
+    <tag k='amenity' v='bicycle_rental' />
+    <tag k='capacity' v='10' />
+    <tag k='name' v='1451. 중랑세무서' />
+    <tag k='name:ko' v='1451. 중랑세무서' />
+    <tag k='network' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='operator' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='ref' v='1451' />
+    <tag k='website' v='https://www.bikeseoul.com' />
+  </node>
+  <node id='-104726' visible='true' lat='37.585655' lon='127.07505'>
+    <tag k='amenity' v='bicycle_rental' />
+    <tag k='capacity' v='15' />
+    <tag k='name' v='겸재교 진입부' />
+    <tag k='name:ko' v='겸재교 진입부' />
+    <tag k='network' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='operator' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='ref' v='1452' />
+    <tag k='website' v='https://www.bikeseoul.com' />
+  </node>
+  <node id='-104727' visible='true' lat='37.604603' lon='127.109253'>
+    <tag k='amenity' v='bicycle_rental' />
+    <tag k='capacity' v='9' />
+    <tag k='name' v='1453. 중랑캠핑숲' />
+    <tag k='name:ko' v='1453. 중랑캠핑숲' />
+    <tag k='network' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='operator' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='ref' v='1453' />
+    <tag k='website' v='https://www.bikeseoul.com' />
+  </node>
+  <node id='-104728' visible='true' lat='37.607349' lon='127.07859'>
+    <tag k='amenity' v='bicycle_rental' />
+    <tag k='capacity' v='10' />
+    <tag k='name' v='1454. 한국전력공사(동대문 중랑지사)' />
+    <tag k='name:ko' v='1454. 한국전력공사(동대문 중랑지사)' />
+    <tag k='network' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='operator' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='ref' v='1454' />
+    <tag k='website' v='https://www.bikeseoul.com' />
+  </node>
+  <node id='-104729' visible='true' lat='37.596329' lon='127.085899'>
+    <tag k='amenity' v='bicycle_rental' />
+    <tag k='capacity' v='10' />
+    <tag k='name' v='1455. 상봉역 2번 출구' />
+    <tag k='name:ko' v='1455. 상봉역 2번 출구' />
+    <tag k='network' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='operator' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='ref' v='1455' />
+    <tag k='website' v='https://www.bikeseoul.com' />
+  </node>
+  <node id='-104730' visible='true' lat='37.595112' lon='127.100327'>
+    <tag k='amenity' v='bicycle_rental' />
+    <tag k='capacity' v='10' />
+    <tag k='name' v='1456. 상아빌딩(우림시장 교차로)' />
+    <tag k='name:ko' v='1456. 상아빌딩(우림시장 교차로)' />
+    <tag k='network' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='operator' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='ref' v='1456' />
+    <tag k='website' v='https://www.bikeseoul.com' />
+  </node>
+  <node id='-104731' visible='true' lat='37.58976' lon='127.093239'>
+    <tag k='amenity' v='bicycle_rental' />
+    <tag k='capacity' v='10' />
+    <tag k='name' v='1457. 동원사거리' />
+    <tag k='name:ko' v='1457. 동원사거리' />
+    <tag k='network' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='operator' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='ref' v='1457' />
+    <tag k='website' v='https://www.bikeseoul.com' />
+  </node>
+  <node id='-104732' visible='true' lat='37.59734' lon='127.093086'>
+    <tag k='amenity' v='bicycle_rental' />
+    <tag k='capacity' v='10' />
+    <tag k='name' v='용마한신아파트사거리' />
+    <tag k='name:ko' v='용마한신아파트사거리' />
+    <tag k='network' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='operator' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='ref' v='1459' />
+    <tag k='website' v='https://www.bikeseoul.com' />
+  </node>
+  <node id='-104733' visible='true' lat='37.59734' lon='127.093086'>
+    <tag k='amenity' v='bicycle_rental' />
+    <tag k='capacity' v='9' />
+    <tag k='name' v='상봉터미널2' />
+    <tag k='name:ko' v='상봉터미널2' />
+    <tag k='network' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='operator' v='서울자전거 따릉이 (Seoul Bike)' />
+    <tag k='ref' v='1458' />
+    <tag k='website' v='https://www.bikeseoul.com' />
+  </node>
+</osm>
