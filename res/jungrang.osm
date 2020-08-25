@@ -200,10 +200,11 @@
     <tag k='ref' v='1435' />
     <tag k='website' v='https://www.bikeseoul.com' />
   </node>
-  <node id='-104701' visible='true' lat='37.605881' lon='127.100632'>
+  <node id='-104701' action='modify' visible='true' lat='37.60600637008' lon='127.10071246627'>
     <tag k='amenity' v='bicycle_rental' />
     <tag k='capacity' v='15' />
     <tag k='name' v='1436. 영풍마드레빌' />
+    <tag k='name:en' v='1436. Yeongpung Madlevill Apartment Complex' />
     <tag k='name:ko' v='1436. 영풍마드레빌' />
     <tag k='network' v='서울자전거 따릉이 (Seoul Bike)' />
     <tag k='operator' v='서울자전거 따릉이 (Seoul Bike)' />
@@ -293,40 +294,44 @@
     <tag k='ref' v='1428' />
     <tag k='website' v='https://www.bikeseoul.com' />
   </node>
-  <node id='-104710' visible='true' lat='37.599957' lon='127.080002'>
+  <node id='-104710' action='modify' visible='true' lat='37.60001012717' lon='127.07999127116'>
     <tag k='amenity' v='bicycle_rental' />
     <tag k='capacity' v='15' />
     <tag k='name' v='1429. 장안중학교' />
+    <tag k='name:en' v='1429. Jangan Middle School' />
     <tag k='name:ko' v='1429. 장안중학교' />
     <tag k='network' v='서울자전거 따릉이 (Seoul Bike)' />
     <tag k='operator' v='서울자전거 따릉이 (Seoul Bike)' />
     <tag k='ref' v='1429' />
     <tag k='website' v='https://www.bikeseoul.com' />
   </node>
-  <node id='-104711' visible='true' lat='37.606152' lon='127.092598'>
+  <node id='-104711' action='modify' visible='true' lat='37.60610737686' lon='127.09257117791'>
     <tag k='amenity' v='bicycle_rental' />
     <tag k='capacity' v='20' />
     <tag k='name' v='1430. 중랑구청' />
+    <tag k='name:en' v='1430. Jungnang-gu Office' />
     <tag k='name:ko' v='1430. 중랑구청' />
     <tag k='network' v='서울자전거 따릉이 (Seoul Bike)' />
     <tag k='operator' v='서울자전거 따릉이 (Seoul Bike)' />
     <tag k='ref' v='1430' />
     <tag k='website' v='https://www.bikeseoul.com' />
   </node>
-  <node id='-104712' visible='true' lat='37.606499' lon='127.095451'>
+  <node id='-104712' action='modify' visible='true' lat='37.60653406085' lon='127.09545904663'>
     <tag k='amenity' v='bicycle_rental' />
     <tag k='capacity' v='10' />
     <tag k='name' v='1431. 중랑구청 사거리' />
+    <tag k='name:en' v='1431. Jungnang-gu Office Four-way Intersection' />
     <tag k='name:ko' v='1431. 중랑구청 사거리' />
     <tag k='network' v='서울자전거 따릉이 (Seoul Bike)' />
     <tag k='operator' v='서울자전거 따릉이 (Seoul Bike)' />
     <tag k='ref' v='1431' />
     <tag k='website' v='https://www.bikeseoul.com' />
   </node>
-  <node id='-104713' visible='true' lat='37.602077' lon='127.079582'>
+  <node id='-104713' action='modify' visible='true' lat='37.60210143781' lon='127.07956724785'>
     <tag k='amenity' v='bicycle_rental' />
     <tag k='capacity' v='10' />
     <tag k='name' v='1433. 중화역 2번출구' />
+    <tag k='name:en' v='1433. Exit 2 of Junghwa Station' />
     <tag k='name:ko' v='1433. 중화역 2번출구' />
     <tag k='network' v='서울자전거 따릉이 (Seoul Bike)' />
     <tag k='operator' v='서울자전거 따릉이 (Seoul Bike)' />
@@ -353,10 +358,11 @@
     <tag k='ref' v='1440' />
     <tag k='website' v='https://www.bikeseoul.com' />
   </node>
-  <node id='-104716' visible='true' lat='37.598591' lon='127.079819'>
+  <node id='-104716' action='modify' visible='true' lat='37.59860481332' lon='127.07988337302'>
     <tag k='amenity' v='bicycle_rental' />
     <tag k='capacity' v='8' />
     <tag k='name' v='1442. (구)신한은행 중랑교지점' />
+    <tag k='name:en' v='1442. Formerly Shinhan Bank (Jungnanggyo Branch)' />
     <tag k='name:ko' v='1442. (구)신한은행 중랑교지점' />
     <tag k='network' v='서울자전거 따릉이 (Seoul Bike)' />
     <tag k='operator' v='서울자전거 따릉이 (Seoul Bike)' />
@@ -474,10 +480,11 @@
     <tag k='ref' v='1453' />
     <tag k='website' v='https://www.bikeseoul.com' />
   </node>
-  <node id='-104728' visible='true' lat='37.607349' lon='127.07859'>
+  <node id='-104728' action='modify' visible='true' lat='37.60751898993' lon='127.07854440245'>
     <tag k='amenity' v='bicycle_rental' />
     <tag k='capacity' v='10' />
     <tag k='name' v='1454. 한국전력공사(동대문 중랑지사)' />
+    <tag k='name:en' v='1454. Korea Electric Power Corporation (Dongdaemun Jungnang Branch)' />
     <tag k='name:ko' v='1454. 한국전력공사(동대문 중랑지사)' />
     <tag k='network' v='서울자전거 따릉이 (Seoul Bike)' />
     <tag k='operator' v='서울자전거 따릉이 (Seoul Bike)' />
