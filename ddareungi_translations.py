@@ -1,3 +1,5 @@
+import json
+
 english = [
   {
     "label": "101. In front of (Old) Hapjeong-dong Community Service Center",
@@ -41008,6 +41010,8 @@ for entry in english:
   else:
     translations[label] = {}
     translations[label]["name:en"] = entry["label"]
+    translations[label]["lat"] = entry["stationLatitude"]
+    translations[label]["lon"] = entry["stationLongitude"]
 
 
 for entry in chinese:
@@ -41021,6 +41025,11 @@ for entry in chinese:
       translations[label] = {}
     translations[label]["name:cn"] = entry["label"]
 
+    if translations[label]["lat"] != entry["stationLatitude"]:
+      print (entry["label"], "different latitude: ", translations[label]["lat"], entry["stationLatitude"])
+    if translations[label]["lon"] != entry["stationLongitude"]:
+      print (entry["label"], "different longitude: ", translations[label]["lon"], entry["stationLongitude"])
+
 
 for entry in japanese:
   label = entry["label"][:entry["label"].find(".")]
@@ -41032,6 +41041,11 @@ for entry in japanese:
       print (entry["label"], "not existing yet (japanese entries)")
       translations[label] = {}
     translations[label]["name:ja"] = entry["label"]
+
+    if translations[label]["lat"] != entry["stationLatitude"]:
+      print (entry["label"], "different latitude: ", translations[label]["lat"], entry["stationLatitude"])
+    if translations[label]["lon"] != entry["stationLongitude"]:
+      print (entry["label"], "different longitude: ", translations[label]["lon"], entry["stationLongitude"])
 
 
 for entry in korean:
@@ -41045,4 +41059,14 @@ for entry in korean:
       translations[label] = {}
     translations[label]["name:ko"] = entry["label"]
 
-print (translations)
+    if translations[label]["lat"] != entry["stationLatitude"]:
+      print (entry["label"], "different latitude: ", translations[label]["lat"], entry["stationLatitude"])
+    if translations[label]["lon"] != entry["stationLongitude"]:
+      print (entry["label"], "different longitude: ", translations[label]["lon"], entry["stationLongitude"])
+
+
+with open("translations.json", "w") as f:
+  f.write(json.dumps(translations))
+  f.close()
+
+print("done")

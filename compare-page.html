@@ -8,7 +8,8 @@
         integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
         crossorigin=""></script>
         <script src="ddareungi_official_data.js"></script>
-        <script src="osm_existing_data.js"></script>
+        <script src="osm_existing_data_201105.js"></script>
+        <script src="ddareungi_translations.js"></script>
         <style>
             #map {
                 width: 750px;
@@ -103,6 +104,27 @@
             ];
 
             var osmData = osmDataFullInfo.elements;
+
+            function processDdareungiTranslations(id, data) {
+                if (id in ddareungiTranslations)
+                {
+                    translations = ddareungiTranslations[id];
+                    console.log(translations);
+                    data["name:en"] = translations["name:en"];
+                    data["name:ja"] = translations["name:ja"];
+                    data["name:cn"] = translations["name:cn"];
+                    if (data["name"] != translations["name:ko"])
+                    {
+                        alert(`bad name for id ${id}, name ${data["name"]}, translation ${translations["name:ko"]}`);
+                    }
+                    data["name:ko"] = translations["name:ko"];
+                }
+                else
+                {
+                    alert(`no entry found for id ${id}`);
+                }
+            }
+            
             function processCsvData(allText) {
                 console.log(allText.length);
                 var recordNum = 8;
@@ -114,6 +136,7 @@
                     data["district"] = entries[0];
                     data["id"] = entries[1];
                     data["name"] = entries[2]; //todo: some entries are written as "id. name" => remove id
+                    processDdareungiTranslations(data["id"], data);
                     data["address"] = entries[3];
                     data["lat"] = entries[4];
                     data["lon"] = entries[5];
